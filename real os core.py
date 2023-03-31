@@ -10,9 +10,9 @@ import os
 
 import sys
 
-print("real os (R) Core Open Source System 1.0")
+print("real os (R) Core Open Source System 1.1")
 
-print("Avaliable update! Visit github.com/LittleWhite to update")
+print("更新检查系统:似乎有新的更新! 访问 github.com/LittleWhite 来下载更新!")
 
 count = 0
 
@@ -20,13 +20,13 @@ stpasswd = "114514"
 
 while count < 3:
 
-    user = input("Login（输入您的用户,它是root）: ")
+    user = input("输入您的用户,它默认是root: ")
 
     if user == "root":
 
         while count < 3:
 
-            passwd = getpass.getpass("Password（输入您的密码，它默认是114514，但是您可以改变它，登录后输入help来获取帮助）: ")
+            passwd = getpass.getpass("输入您的密码，它默认是114514，但是您可以改变它，登录后输入help来获取帮助: ")
 
             if passwd == stpasswd:
 
@@ -38,11 +38,11 @@ while count < 3:
 
                     if cmd == "ls":
 
-                        print("Downloads  Documents  Music  Pictures")
+                        print("下载  文档  音乐  图片")
 
                     elif cmd == "version":
 
-                        print("real os (R) Core Open Source System 1.0 ")
+                        print("Real OS (R) Core Open Source System 1.1 ")
 
                     elif cmd == "coverter":
 
@@ -72,13 +72,13 @@ while count < 3:
 
                     elif cmd == "passwd":
 
-                        stpasswd = input("Input new password: ")
+                        stpasswd = input("您的新密码是什么呢: ")
 
                     elif cmd == "calendar":
 
-                        yy = int(input("Year: "))
+                        yy = int(input("今天的年份: "))
 
-                        mm = int(input("Month: "))
+                        mm = int(input("今天的月份: "))
 
                         print(calendar.month(yy, mm))
 
@@ -102,7 +102,7 @@ while count < 3:
 
                         print("exit        Log out")
                         
-                        print("这些是英语，后期会变成汉字")
+                        print("这些是英语，后期会出现中文版")
                     elif cmd == "calc":
 
                         try:
@@ -129,7 +129,7 @@ while count < 3:
 
                     else:
 
-                        print("很抱歉，此命令并不存在于计算只因上")
+                        print("很抱歉，此命令并不存在于此计算机上")
 
             else:
 
@@ -137,4 +137,4 @@ while count < 3:
 
     else:
 
-        print("对不起，计算只因上并不存在这个用户")
+        print("对不起，此计算机上并不存在这个用户")
